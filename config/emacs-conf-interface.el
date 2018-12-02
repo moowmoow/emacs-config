@@ -1,0 +1,8 @@
+(init-package "ivy")
+(init-package "helm")
+(init-package "avy")
+(init-package "swiper")
+(init-package "eyebrowse")
+(init-package "ace-window")
+(init-package "windmove")
+(init-package "hydra")
