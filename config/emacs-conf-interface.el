@@ -1,4 +1,5 @@
 (init-package "ivy")
+(init-package "counsel")
 (init-package "helm")
 (init-package "avy")
 (init-package "swiper")

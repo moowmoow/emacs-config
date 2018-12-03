@@ -40,3 +40,4 @@
 (init-config "help")
 
 ;; 사이트별 환경 설정
+(mapc 'load (directory-files-recursively (concat emacs-home "/site") ".\.el"))

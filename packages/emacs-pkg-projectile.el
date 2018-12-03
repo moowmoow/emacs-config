@@ -21,9 +21,6 @@
   ;; 프로젝트 타일 completion 세팅
   (setq projectile-completion-system 'ivy)
 
-  ;;
-  (counsel-projectile-mode t)
-
   ;; 캐싱 활성화
   (setq projectile-enable-caching t)
 
