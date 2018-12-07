@@ -22,6 +22,11 @@
 (init-package "session")
 (init-package "smartparens")
 (init-package "undo-tree")
+(init-package "multiple-cursors")
+(init-package "visual-regexp")
+(init-package "aggressive-indent")
+(init-package "indent-guide")
+(init-package "format-all")
 
 (show-paren-mode t)
 

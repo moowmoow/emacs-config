@@ -23,6 +23,13 @@
 ;; java
 (init-package "lsp-mode")
 
+;; php
+(init-package "php-mode")
+(init-package "ac-php-core")
+(init-package "php-eldoc")
+(init-package "company-php")
+(init-package "flymake-php")
+
 (add-hook 'prog-mode-hook 'linum-mode)
 (add-hook 'prog-mode-hook 'hl-line-mode)
 (add-hook 'prog-mode-hook 'clean-aindent-mode)

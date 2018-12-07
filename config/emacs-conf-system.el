@@ -1,5 +1,7 @@
 
 (init-package "el-get")
+(init-package "disable-mouse")
+(init-package "symon")
 
 (prefer-coding-system 'utf-8)
 (set-terminal-coding-system 'utf-8)

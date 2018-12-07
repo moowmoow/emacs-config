@@ -28,6 +28,7 @@
 ;; 환경 초기화
 (init-config "system")
 (init-config "interface")
+(init-config "navi")
 (init-config "file")
 (init-config "tool")
 (init-config "face")

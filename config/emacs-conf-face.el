@@ -9,6 +9,10 @@
 (init-package "beacon")
 (init-package "nyan-mode")
 (init-package "volatile-highlights")
+(init-package "dimmer")
+(init-package "focus")
+(init-package "linum-relative")
+(init-package "yascroll")
 
 ;; 바 삭제
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
