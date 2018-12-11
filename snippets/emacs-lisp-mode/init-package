@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: init-package
+# key: ip
+# --
+(init-package "$0")

@@ -1,0 +1,6 @@
+# key: up
+# name: use-package
+# --
+(use-package $1
+  :ensure t$0
+  )

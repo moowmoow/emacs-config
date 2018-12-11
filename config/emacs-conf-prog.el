@@ -21,7 +21,14 @@
 (init-package "tern")
 
 ;; java
-(init-package "lsp-mode")
+(init-package "flycheck")
+;; (init-package "cc-mode")
+;; (init-package "lsp-mode")
+;; (init-package "company-lsp")
+;; (init-package "lsp-ui")
+;; (init-package "lsp-java")
+;; (init-package "dap-mode")
+(init-package "meghanada")
 
 ;; php
 (init-package "php-mode")
@@ -30,10 +37,15 @@
 (init-package "company-php")
 (init-package "flymake-php")
 
+;; clojure
+(init-package "cider")
+
+;; sql
+(init-package "ejc-sql")
+
 (add-hook 'prog-mode-hook 'linum-mode)
 (add-hook 'prog-mode-hook 'hl-line-mode)
 (add-hook 'prog-mode-hook 'clean-aindent-mode)
-(add-hook 'prog-mode-hook #'undo-tree-mode)
 
 ;; Garbage Collection  (100MB)
 (setq gc-cons-threshold 104857600)

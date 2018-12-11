@@ -4,5 +4,5 @@
 
 (add-hook 'text-mode-hook 'linum-mode)
 (add-hook 'text-mode-hook 'hl-line-mode)
-(add-hook 'text-mode-hook #'undo-tree-mode)
+
 
