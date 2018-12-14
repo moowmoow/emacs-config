@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: pagecontext-setattribute
+# key: pc-set
+# --
+pageContext.setAttribute("$1", $2, "$3")

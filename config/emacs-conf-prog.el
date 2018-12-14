@@ -6,6 +6,7 @@
 
 ;; web
 (init-package "web-mode")
+(init-package "emmet-mode")
 
 ;; perl
 ;; (if (string-equal system-type "windows-nt")

@@ -2,11 +2,11 @@
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode nil)
 
-;; (init-function "emacs-func-edit")
+(init-function "edit")
 
-;; (global-set-key (kbd "C-M-<up>") 'move-line-up)
-;; (global-set-key (kbd "C-M-<down>") 'move-line-down)
-;; (global-set-key (kbd "M-g M-c") 'go-to-column)
+(global-set-key (kbd "C-M-<up>") 'move-line-up)
+(global-set-key (kbd "C-M-<down>") 'move-line-down)
+(global-set-key (kbd "M-g M-c") 'go-to-column)
 
 (init-package "duplication-thing")
 (init-package "iedit")
@@ -27,6 +27,7 @@
 (init-package "aggressive-indent")
 (init-package "indent-guide")
 (init-package "format-all")
+(init-package "wgrep")
 
 (show-paren-mode t)
 
