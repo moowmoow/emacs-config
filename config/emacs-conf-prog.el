@@ -1,4 +1,9 @@
 
+(init-package "flycheck")
+
+;; build env
+(init-package "flycheck-gradle")
+
 ;; (if (string-equal system-type "windows-nt")
 ;;     (progn
 ;;       (add-to-list 'exec-path "C:/tools/apache-maven-3.6.0/bin")
@@ -22,7 +27,7 @@
 (init-package "tern")
 
 ;; java
-(init-package "flycheck")
+(init-package "javadoc-lookup")
 ;; (init-package "cc-mode")
 ;; (init-package "lsp-mode")
 ;; (init-package "company-lsp")

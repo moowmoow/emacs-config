@@ -26,6 +26,7 @@
   (load (concat emacs-home "/init/themes/emacs-theme-" path ".el")))
 
 ;; 환경 초기화
+(init-config "global")
 (init-config "system")
 (init-config "interface")
 (init-config "navi")
