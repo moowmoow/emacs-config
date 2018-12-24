@@ -1,5 +1,6 @@
 
 (init-package "flycheck")
+(init-package "origami")
 
 ;; build env
 (init-package "flycheck-gradle")
