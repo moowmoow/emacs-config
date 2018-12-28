@@ -8,24 +8,8 @@
 ;;(if (not (file-exists-p backup-directory))
 ;;    (make-directory backup-directory t))
 
-
-;; 백업 파일 생성 여부
-(setq make-backup-file nil
-      backup-directory-alist '((".*" . "~/.backup")) ; 백업 파일 저장 경로
-      backup-by-copying  t                                ; 백업 디렉토리에 현재 파일을 복사
-      version-control    t                                ; 백업 파일에 대한 버전 번호
-      delete-old-version t                                ; 필요하지 않은 버전 삭제
-      kept-old-versions  5                                ; 백업 유지 버전 (구)
-      kept-new-versions  5                                ; 백업 유지 버전 (신규)
-      )
-
-;; 버퍼 자동 저장
-(setq auto-save-default nil
-      auto-save-timeout  20                               ; 자동 저장 전 유휴시간(초)
-      auto-save-interval 200                              ; 자동 저장 사이에 keystrokes의 수
-      )
-
 (init-function "file")
+(init-package "snapshot-timemachine")
 (init-package "recentf-ext")
 (init-package "vlf")
 (init-package "savehist")

@@ -1,6 +1,7 @@
 
 (init-package "flycheck")
 (init-package "origami")
+(init-package "yaml-mode")
 
 ;; build env
 (init-package "flycheck-gradle")

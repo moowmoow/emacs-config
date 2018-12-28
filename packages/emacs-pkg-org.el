@@ -22,7 +22,21 @@
   ;;   "Face used for the line delimiting the end of source blocks.")
 
   (setq org-todo-keywords
-	'((sequencep "TODO(t)" "|" "DONE(d)")
+	    '((sequencep "TODO(t)" "|" "DONE(d)")
           (sequencep "REPORT(r)" "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")))
 
-  (global-set-key (kbd "C-c a") 'org-agenda))
+  (global-set-key (kbd "C-c a") 'org-agenda)
+  ;;; image
+  (setq org-startup-with-inline-images t)
+
+  (org-babel-do-load-languages
+   'org-babel-load-languages
+   '((plantuml . t)))
+
+  (setq org-confirm-babel-evaluate nil)
+
+  (add-hook 'org-babel-after-execute-hook
+            (lambda ()
+              (when org-inline-image-overlays
+                (org-redisplay-inline-images))))
+  )

@@ -13,6 +13,7 @@
 (init-package "yasnippet")
 (init-package "ivy-yasnippet")
 (init-package "company")
+(init-package "company-quickhelp")
 (init-package "auto-complete")
 (init-package "whitespace")
 (init-package "clean-aindent-mode")
@@ -28,6 +29,7 @@
 (init-package "indent-guide")
 (init-package "format-all")
 (init-package "wgrep")
+(init-package "darkroom")
 
 (show-paren-mode t)
 
