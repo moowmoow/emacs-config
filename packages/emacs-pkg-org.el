@@ -39,4 +39,10 @@
             (lambda ()
               (when org-inline-image-overlays
                 (org-redisplay-inline-images))))
+
+  ;; org-goto-auto-isearch disable
+  (setq org-goto-auto-isearch nil)
+
+  ;; imenu setting
+  (global-set-key (kbd "C-c C-h") 'counsel-imenu)
   )

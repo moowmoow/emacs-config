@@ -26,6 +26,7 @@
 
 ;; js
 (init-package "js2-mode")
+(init-package "rjsx-mode")
 (init-package "tern")
 
 ;; java

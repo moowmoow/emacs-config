@@ -1,0 +1,8 @@
+# key: const
+# name: const-lambda
+# --
+const $1 = () => {
+    return (
+        $2
+    );
+};
