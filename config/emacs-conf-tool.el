@@ -1,6 +1,7 @@
 
 (init-package "restclient")
 (init-package "company-restclient")
+(init-package "ob-restclient")
 (init-package "google-translate")
 (init-package "plantuml-mode")
 

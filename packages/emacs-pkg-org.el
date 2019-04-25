@@ -31,7 +31,10 @@
 
   (org-babel-do-load-languages
    'org-babel-load-languages
-   '((plantuml . t)))
+   '(
+     (plantuml . t)
+     (restclient . t)
+     ))
 
   (setq org-confirm-babel-evaluate nil)
 

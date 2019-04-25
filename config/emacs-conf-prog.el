@@ -31,13 +31,13 @@
 
 ;; java
 (init-package "javadoc-lookup")
-;; (init-package "cc-mode")
-;; (init-package "lsp-mode")
-;; (init-package "company-lsp")
-;; (init-package "lsp-ui")
-;; (init-package "lsp-java")
-;; (init-package "dap-mode")
-(init-package "meghanada")
+(init-package "cc-mode")
+(init-package "lsp-mode")
+(init-package "company-lsp")
+(init-package "lsp-ui")
+(init-package "lsp-java")
+(init-package "dap-mode")
+;; (init-package "meghanada")
 
 ;; php
 (init-package "php-mode")
