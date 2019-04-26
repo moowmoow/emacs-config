@@ -36,6 +36,7 @@
 (init-package "company-lsp")
 (init-package "lsp-ui")
 (init-package "lsp-java")
+(init-package "helm-lsp")
 (init-package "dap-mode")
 ;; (init-package "meghanada")
 
@@ -51,6 +52,9 @@
 
 ;; sql
 (init-package "ejc-sql")
+
+;; common-lisp
+(init-package "slime")
 
 (add-hook 'prog-mode-hook 'linum-mode)
 (add-hook 'prog-mode-hook 'hl-line-mode)
