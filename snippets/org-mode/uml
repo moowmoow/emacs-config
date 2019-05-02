@@ -1,0 +1,8 @@
+# key: uml
+# name: uml
+# --
+#+BEGIN_SRC plantuml :file $1
+  @startuml
+  $0
+  @enduml
+#+END_SRC
