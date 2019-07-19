@@ -30,7 +30,7 @@
 (init-package "tern")
 
 ;; java
-(init-package "javadoc-lookup")
+;; (init-package "javadoc-lookup")
 (init-package "cc-mode")
 (init-package "lsp-mode")
 (init-package "company-lsp")

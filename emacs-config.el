@@ -5,6 +5,7 @@
 (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
 
 (package-initialize)
+(setq package-check-signature nil)
 
 (when (not (package-installed-p 'use-package))
   (package-refresh-contents)
