@@ -13,18 +13,20 @@
 
 (setq emacs-home (getenv "EMACS_HOME"))
 (setq emacs-base (getenv "EMACS_BASE"))
+(setq emacs-conf (getenv "EMACS_CONF"))
+(setq emacs-docs (getenv "EMACS_DOCS"))
 
 (defun init-config (path)
-  (load (concat emacs-home "/init/config/emacs-conf-" path ".el")))
+  (load (concat emacs-conf "/config/emacs-conf-" path ".el")))
 
 (defun init-package (path)
-  (load (concat emacs-home "/init/packages/emacs-pkg-" path ".el")))
+  (load (concat emacs-conf "/packages/emacs-pkg-" path ".el")))
 
 (defun init-function (path)
-  (load (concat emacs-home "/init/functions/emacs-func-" path ".el")))
+  (load (concat emacs-conf "/functions/emacs-func-" path ".el")))
 
 (defun init-theme (path)
-  (load (concat emacs-home "/init/themes/emacs-theme-" path ".el")))
+  (load (concat emacs-conf "/themes/emacs-theme-" path ".el")))
 
 ;; 환경 초기화
 (init-config "global")

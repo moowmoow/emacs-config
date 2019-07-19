@@ -12,6 +12,6 @@
   ;;         '(concat emacs-home "/init/snippets")
   ;; ))
   (yas-global-mode 1)
-  (add-to-list 'yas-snippet-dirs (concat emacs-home "/init/snippets"))
+  (add-to-list 'yas-snippet-dirs (concat emacs-conf "/snippets"))
   (yas-reload-all)
   (define-key yas-minor-mode-map (kbd "<C-tab>") 'yas-ido-expand))
