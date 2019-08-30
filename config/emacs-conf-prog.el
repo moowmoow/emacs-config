@@ -52,6 +52,10 @@
 
 ;; sql
 (init-package "ejc-sql")
+(init-package "sql-indent")
+
+;; groovy
+(init-package "groovy-mode")
 
 ;; common-lisp
 (init-package "slime")
