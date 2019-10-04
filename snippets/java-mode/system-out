@@ -1,0 +1,4 @@
+# key: sysout
+# name: system-out
+# --
+System.out.println($1);

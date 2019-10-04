@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: comment-class
+# key: cc
+# --
+/**
+ * $0
+ *
+ * @author $1
+ * @since $2
+ */
