@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: local-unset-key
+# key: luk
+# --
+(local-unset-key (kbd "$1"))

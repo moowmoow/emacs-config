@@ -1,0 +1,4 @@
+# key: setd
+# name: setq-default
+# --
+(setq-default $1)

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: global-set-key-remap
+# key: gskr
+# --
+(global-set-key [remap $1] #'$2)

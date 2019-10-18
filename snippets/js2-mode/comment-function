@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: comment-function
+# key: cmt-f
+# --
+/**
+ * $0
+ */

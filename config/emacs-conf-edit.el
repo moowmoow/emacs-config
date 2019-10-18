@@ -7,6 +7,7 @@
 (global-set-key (kbd "C-M-<up>") 'move-line-up)
 (global-set-key (kbd "C-M-<down>") 'move-line-down)
 (global-set-key (kbd "M-g M-c") 'go-to-column)
+(global-set-key (kbd "C-c $") 'toggle-truncate-lines)
 
 (init-package "duplication-thing")
 (init-package "iedit")
@@ -30,6 +31,8 @@
 (init-package "format-all")
 (init-package "wgrep")
 (init-package "darkroom")
+;; (init-package "goto-last-change")
+(init-package "goto-chg")
 
 (show-paren-mode t)
 

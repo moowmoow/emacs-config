@@ -31,4 +31,5 @@
   ;; Ivy-resume and other commands
   (global-set-key (kbd "C-c C-r") 'ivy-resume)
   (add-hook 'ivy-occur-mode-hook 'toggle-truncate-lines nil)
+  (add-hook 'ivy-occur-grep-mode-hook 'toggle-truncate-lines nil)
   )
