@@ -48,4 +48,7 @@
 
   ;; imenu setting
   (global-set-key (kbd "C-c C-h") 'counsel-imenu)
+
+  ;; 목록형 레벨에 따라 분류
+  (setq org-list-demote-modify-bullet '(("+" . "-") ("-" . "+")))
   )

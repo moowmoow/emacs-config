@@ -10,7 +10,10 @@
   :config
   ;;(add-hook 'after-init-hook 'global-company-mode)
   ;;(global-set-key "\t" 'company-complete-common)
-  ;;(global-set-key (kbd "C-<tab>") 'company-complete-common)
+  ;; (global-set-key (kbd "C-<tab>") 'company-complete-common)
+
+  (define-key company-mode-map (kbd "C-c \\") 'company-complete)
+  (define-key company-mode-map (kbd "C-c |") 'company-complete-common)
 
   ;; (add-hook 'ielm-mode-hook 'company-mode)
   (add-hook 'ielm-mode-hook 'company-mode)

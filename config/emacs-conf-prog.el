@@ -1,6 +1,10 @@
 
+;; common
+(init-package "dumb-jump")
 (init-package "flycheck")
 (init-package "origami")
+
+;; yaml
 (init-package "yaml-mode")
 
 ;; build env
@@ -10,6 +14,9 @@
 ;;     (progn
 ;;       (add-to-list 'exec-path "C:/tools/apache-maven-3.6.0/bin")
 ;;       ))
+
+;; c++
+(init-package "cmake-ide")
 
 ;; web
 (init-package "web-mode")
@@ -63,6 +70,16 @@
 (add-hook 'prog-mode-hook 'linum-mode)
 (add-hook 'prog-mode-hook 'hl-line-mode)
 (add-hook 'prog-mode-hook 'clean-aindent-mode)
+
+;; elips
+(init-package "ctable")
+
+;; python
+(init-package "elpy")
+(init-package "blacken")
+
+;; coffee script
+(init-package "coffee-mode")
 
 ;; Garbage Collection  (100MB)
 (setq gc-cons-threshold 104857600)

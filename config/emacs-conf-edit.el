@@ -33,6 +33,8 @@
 (init-package "darkroom")
 ;; (init-package "goto-last-change")
 (init-package "goto-chg")
+(init-package "edit-indirect")
+(init-package "evil")
 
 (show-paren-mode t)
 

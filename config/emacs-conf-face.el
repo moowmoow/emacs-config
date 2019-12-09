@@ -13,6 +13,7 @@
 (init-package "focus")
 (init-package "linum-relative")
 (init-package "yascroll")
+(init-package "doom-modeline")
 
 ;; 바 삭제
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: define-key-global-map
+# key: dkg
+# --
+(define-key global-map (kbd "$1") '$2)

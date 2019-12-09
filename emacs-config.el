@@ -15,6 +15,7 @@
 (setq emacs-base (getenv "EMACS_BASE"))
 (setq emacs-conf (getenv "EMACS_CONF"))
 (setq emacs-docs (getenv "EMACS_DOCS"))
+(setq emacs-work (concat emacs-home "/work"))
 
 (defun init-config (path)
   (load (concat emacs-conf "/config/emacs-conf-" path ".el")))

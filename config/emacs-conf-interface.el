@@ -1,5 +1,6 @@
 (init-package "ivy")
 (init-package "counsel")
+(init-package "counsel-tramp")
 (init-package "helm")
 (init-package "swiper")
 (init-package "eyebrowse")
