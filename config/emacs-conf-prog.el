@@ -81,6 +81,9 @@
 ;; coffee script
 (init-package "coffee-mode")
 
+;; Visual Basic
+(init-package "vbasense")
+
 ;; Garbage Collection  (100MB)
 (setq gc-cons-threshold 104857600)
 

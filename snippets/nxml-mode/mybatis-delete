@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: mybatis-delete
+# key: delete
+# --
+<delete id="$1" parameterType="$2">
+    $0
+</delete>

@@ -26,7 +26,8 @@
           (sequencep "REPORT(r)" "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")))
 
   (global-set-key (kbd "C-c a") 'org-agenda)
-  ;;; image
+
+  ;;; 인라인에서 이미지를 출력할지 설정
   (setq org-startup-with-inline-images t)
 
   (org-babel-do-load-languages

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: mybatis-include
+# key: include
+# --
+<include refid="$1" />

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: mybatis-if
+# key: if
+# --
+<if test="$1">
+  $0
+</if>

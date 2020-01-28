@@ -8,6 +8,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (use-package evil
   :ensure t
+  :init
+  ;; (setq evil-want-C-u-scroll t)
   :config
-  (global-set-key (kbd "C-M-z") 'evil-mode)
+  (global-set-key (kbd "C-M-<return>") 'evil-mode)
+  (turn-on-evil-mode)
   )

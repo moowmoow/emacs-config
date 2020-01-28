@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: mybatis-choose
+# key: choose
+# --
+<choose>
+    <when test="$1">
+        $2
+    </when>
+    <otherwise>
+        $0
+    </otherwise>
+</choose>

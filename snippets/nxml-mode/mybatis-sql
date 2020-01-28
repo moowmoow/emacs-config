@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: mybatis-sql
+# key: sql
+# --
+<sql id="$1">
+    $0
+</sql>

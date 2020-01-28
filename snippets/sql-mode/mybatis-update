@@ -1,0 +1,6 @@
+# key: update
+# name: mybatis-update
+# --
+<update id="$1" parameterType="$2">
+    $0
+</update>

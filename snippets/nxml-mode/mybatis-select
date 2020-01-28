@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: mybatis-select
+# key: select
+# --
+<select id="$1" parameterType="$2" resultMap="$3">
+    $0
+</select>

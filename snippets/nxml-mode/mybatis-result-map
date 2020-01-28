@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: mybatis-result-map
+# key: resultMap
+# --
+<resultMap id="$1" type="$2">
+    <id     column="" property="" />
+    <result column="" property="" />
+</resultMap>

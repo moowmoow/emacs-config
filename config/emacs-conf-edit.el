@@ -8,6 +8,8 @@
 (global-set-key (kbd "C-M-<down>") 'move-line-down)
 (global-set-key (kbd "M-g M-c") 'go-to-column)
 (global-set-key (kbd "C-c $") 'toggle-truncate-lines)
+(global-set-key (kbd "C-\\") 'delete-horizontal-space-forward)
+(global-set-key (kbd "M-\\") 'delete-horizontal-space)
 
 (init-package "duplication-thing")
 (init-package "iedit")

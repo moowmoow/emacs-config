@@ -18,3 +18,9 @@
 (defun go-to-column (column)
   (interactive "ncolumn: ")
   (move-to-column column t))
+
+;; 라인 앞의 공백을 제거
+(defun delete-horizontal-space-forward () ; adapted from `delete-horizontal-space'
+  "*Delete all spaces and tabs after point."
+  (interactive "*")
+  (delete-region (point) (progn (skip-chars-forward " \t") (point))))
