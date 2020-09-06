@@ -12,5 +12,5 @@
   ;; (setq evil-want-C-u-scroll t)
   :config
   (global-set-key (kbd "C-M-<return>") 'evil-mode)
-  (turn-on-evil-mode)
+  (evil-mode t)
   )

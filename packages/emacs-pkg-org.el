@@ -22,7 +22,7 @@
   ;;   "Face used for the line delimiting the end of source blocks.")
 
   (setq org-todo-keywords
-	    '((sequencep "TODO(t)" "|" "DONE(d)")
+	    '((sequencep "TODO(t)" "PROGRESS(p)" "COMPLETE(c)" "|" "DONE(d)")
           (sequencep "REPORT(r)" "BUG(b)" "KNOWNCAUSE(k)" "|" "FIXED(f)")))
 
   (global-set-key (kbd "C-c a") 'org-agenda)

@@ -77,3 +77,8 @@
 ;;   "Display whether caps lock is on."
 ;;   :global t
 ;;   :lighter (:eval (if (caps-lock-on (x-led-mask)) " CAPS-LOCK" "")))
+
+;; 투명창
+;; (when window-system
+;;   (set-frame-parameter (selected-frame) 'alpha (list 80 80))
+;;   (add-to-list 'default-frame-alist '(alpha ,80)))
