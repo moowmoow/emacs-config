@@ -1,12 +1,27 @@
-;(setq find-program "d:\\tools\\cygwin64\\bin\\find.exe")
-;(setq grep-program "d:\\tools\\cygwin64\\bin\\grep.exe")
+;;(setq find-program "d:\\tools\\cygwin64\\bin\\find.exe")
+;;(setq grep-program "d:\\tools\\cygwin64\\bin\\grep.exe")
 
 (setq large-file-warning-threshold 104857600) ; 파일 사이즈 제한 (100MB)
 
 ;;(defvar backup-directory "~/.backup")
 
 ;;(if (not (file-exists-p backup-directory))
-;;    (make-directory backup-directory t))
+;;(make-directory backup-directory t))
+
+;; (setq auto-save-default nil)
+;; (setq make-backup-files nil)
+
+;; (setq backup-by-copying t
+;;       backup-directory-alist '((".*" . ,"~/.backup/"))
+;;       auto-save-file-name-transforms '((".*" ,"~/.backup/" t))
+;;       delete-old-version t
+;;       kept-new-versions 6
+;;       kept-old-versions 2
+;;       version-control t
+;;       )
+
+;; .# 파일 생성 안함
+(setq create-lockfiles nil)
 
 (init-function "file")
 (init-package "snapshot-timemachine")

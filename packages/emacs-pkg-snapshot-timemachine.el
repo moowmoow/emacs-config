@@ -22,6 +22,7 @@
   (defvar auto-save-directory "~/.emacs.d/auto-save/")
   (setq auto-save-file-name-transforms `((".*" ,auto-save-directory t)))
 
+
   (when (not (file-exists-p auto-save-directory))
     (make-directory auto-save-directory t))
 

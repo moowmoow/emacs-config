@@ -10,5 +10,6 @@
   :ensure t
   :config
   (setq linum-relative-backend 'linum-mode)
+  (linum-on)
   )
 

@@ -35,6 +35,9 @@
 (init-package "js2-mode")
 (init-package "rjsx-mode")
 (init-package "tern")
+(init-package "vue-mode")
+(init-package "pug-mode")
+(init-package "jade-mode")
 
 ;; java
 ;; (init-package "javadoc-lookup")
