@@ -31,7 +31,7 @@
 (init-package "treemacs")
 (init-package "htmlize")
 
-(global-set-key (kbd "C-c r") 'rename-file-and-buffer)
+(global-set-key (kbd "C-c R") 'rename-file-and-buffer)
 (global-set-key (kbd "C-c D") 'delete-file-and-buffer)
 (global-set-key (kbd "C-c b") 'switch-to-previous-buffer)
 

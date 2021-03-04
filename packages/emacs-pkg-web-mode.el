@@ -8,9 +8,9 @@
   :ensure t
   :config
   ;; (setq web-mode-tag-auto-close-style 0)
-  (setq web-mode-markup-indent-offset 4)    ; 태그 들여쓰기
-  (setq web-mode-css-indent-offset 4)       ; css 들여쓰기
-  (setq web-mode-code-indent-offset 4)      ; 스타일, 스크립트 들여쓰기
+  (setq web-mode-markup-indent-offset 2)    ; 태그 들여쓰기
+  (setq web-mode-css-indent-offset 2)       ; css 들여쓰기
+  (setq web-mode-code-indent-offset 2)      ; 스타일, 스크립트 들여쓰기
   (setq web-mode-style-padding 1)           ; 스타일 패딩
   (setq web-mode-script-padding 1)          ; 스크립트 패딩
   (setq web-mode-block-padding 0)           ; 블록 패딩
@@ -32,6 +32,7 @@
   (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
   (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
   (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.hbs\\'" . web-mode))
 
   ;;(setq auto-mode-alist
   ;;      (append '(
