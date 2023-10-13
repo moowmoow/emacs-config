@@ -27,5 +27,5 @@
   ;; 인덱싱 방식 설정
   ;;(setq projectile-indexing-method 'alien)
   (setq projectile-indexing-method 'hybrid)
-  (setq projectile-generic-command "fd -H --ignore-file .projectile -t f -0")
+  (setq projectile-generic-command "fdfind -H --ignore-file .projectile -t f -0")
   )

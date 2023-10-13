@@ -4,6 +4,8 @@
   (setq org-highlight-latex-and-related '(latex))
   ;;(setq org-src-fontify-natively nil)
 
+  (define-key outline-minor-mode-map (kbd "<tab>") 'outline-cycle)
+
   ;; org-mode setting
   (setq org-src-fontify-natively t)
   ;;(org-block-begin-line ((t (:underline "#A7A6AA" :foreground "#008ED1" :background "#EAEAFF"))))

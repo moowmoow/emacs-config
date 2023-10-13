@@ -53,7 +53,7 @@
 ;; php
 (init-package "php-mode")
 (init-package "ac-php-core")
-(init-package "php-eldoc")
+;; (init-package "php-eldoc")
 (init-package "company-php")
 (init-package "flymake-php")
 
@@ -86,6 +86,9 @@
 
 ;; Visual Basic
 (init-package "vbasense")
+
+;; gradle
+(init-package "gradle-mode")
 
 ;; Garbage Collection  (100MB)
 (setq gc-cons-threshold 104857600)

@@ -10,6 +10,7 @@
 (global-set-key (kbd "C-c $") 'toggle-truncate-lines)
 (global-set-key (kbd "C-\\") 'delete-horizontal-space-forward)
 (global-set-key (kbd "M-\\") 'delete-horizontal-space)
+(global-set-key (kbd "M-RET") 'file-name-on-clipboard)
 
 (init-package "duplication-thing")
 (init-package "iedit")
@@ -25,7 +26,6 @@
 (init-package "hippie-exp")
 (init-package "session")
 (init-package "smartparens")
-(init-package "undo-tree")
 (init-package "multiple-cursors")
 (init-package "visual-regexp")
 (init-package "aggressive-indent")
@@ -39,6 +39,7 @@
 (init-package "evil")
 
 (show-paren-mode t)
+;;(setq evil-undo-system 'nil)
 
 ;; electric-pair-mode
 (electric-pair-mode t)

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: jekyll-page
+# key: jpage
+# --
+---
+title: $1
+tags: $2
+keywords: $3
+summary: $4
+sidebar: $5
+permalink: $6
+---

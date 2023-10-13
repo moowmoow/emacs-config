@@ -6,7 +6,7 @@
 (init-package "rainbow-blocks")
 (init-package "rainbow-identifiers")
 (init-package "rainbow-delimiters")
-(init-package "beacon")
+                                        ;(init-package "beacon")
 (init-package "nyan-mode")
 (init-package "volatile-highlights")
 (init-package "dimmer")

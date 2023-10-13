@@ -9,8 +9,15 @@
 (use-package evil
   :ensure t
   :init
-  ;; (setq evil-want-C-u-scroll t)
+                                        ;(setq evil-want-C-u-scroll t)
   :config
+  (with-eval-after-load 'evil-maps (define-key evil-motion-state-map (kbd "TAB") nil)) 
+  (evil-define-key 'normal org-mode-map (kbd "<tab>") #'org-cycle)
+  (evil-define-key 'insert 'org-mode-map
+    "C-t" 'org-metaleft
+    "C-d" 'org-metaright
+    "C" nil)
+  (setq evil-want-C-i-jump nil)
   (global-set-key (kbd "C-M-<return>") 'evil-mode)
   (evil-mode t)
   )

@@ -24,3 +24,16 @@
   "*Delete all spaces and tabs after point."
   (interactive "*")
   (delete-region (point) (progn (skip-chars-forward " \t") (point))))
+
+;; 파일 경로 클립보드에 복사
+(defun file-name-on-clipboard ()
+  "Put the current file name on the clipboard"
+  (interactive)
+  (let ((filename (if (equal major-mode 'dired-mode)
+                      default-directory
+                    (buffer-file-name))))
+    (when filename
+      (with-temp-buffer
+        (insert filename)
+        (clipboard-kill-region (point-min) (point-max)))
+      (message filename))))

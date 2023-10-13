@@ -3,6 +3,35 @@
   :config
   (load-theme 'paganini t)
 
+                                        ;(setq frame-background-mode 'dark)
+
+  (eval-after-load 'ansi-color
+    '(progn
+       (setq ansi-color-names-vector
+             ["black" "tomato" "chartreuse1" "gold1"
+              "DodgerBlue3" "MediumOrchid1" "cyan" "white"])
+       (setq ansi-color-map (ansi-color-make-color-map))))
+  
+  ;; To make colors in term mode derive emacs' ansi color map
+  (eval-after-load 'term
+    '(let ((term-face-vector [term-color-black
+                              term-color-red
+                              term-color-green
+                              term-color-yellow
+                              term-color-blue
+                              term-color-magenta
+                              term-color-cyan
+                              term-color-white]))
+       (require 'ansi-color)
+       (dotimes (index (length term-face-vector))
+         (let ((fg (cdr (aref ansi-color-map (+ index 30))))
+               (bg (cdr (aref ansi-color-map (+ index 40)))))
+           (set-face-attribute (aref term-face-vector index) nil
+                               :foreground fg
+                               :background bg)))))
+
+                                        ;(setq ansi-term-color-vector [term term-color-black term-color-red term-color-green term-color-yellow term-color-blue term-color-magenta term-color-cyan term-color-white])
+
   (custom-theme-set-faces
    'paganini
 

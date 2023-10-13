@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: jekyll-post
+# key: jpost
+# --
+---
+title: $1
+tags: $2
+keywords: $3
+sidebar: $4
+permalink: $5
+summary: $6
+---
