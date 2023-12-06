@@ -28,4 +28,5 @@
   ;;(setq projectile-indexing-method 'alien)
   (setq projectile-indexing-method 'hybrid)
   (setq projectile-generic-command "fdfind -H --ignore-file .projectile -t f -0")
+  (setq projectile-git-use-fd nil)
   )

@@ -38,6 +38,7 @@
 (init-package "vue-mode")
 (init-package "pug-mode")
 (init-package "jade-mode")
+(init-package "typescript-mode")
 
 ;; java
 ;; (init-package "javadoc-lookup")

@@ -2,14 +2,16 @@
 (defun delete-file-and-buffer ()
   "Kill the current buffer and deletes the file it is visiting."
   (interactive)
-  (let ((filename (buffer-file-name)))
-    (when filename
-      (if (vc-backend filename)
-          (vc-delete-file filename)
-        (progn
-          (delete-file filename)
-          (message "deleted file %s" filename)
-          (kill-buffer))))))
+  (if (y-or-n-p (format "Really Delete File?"))
+      (let ((filename (buffer-file-name)))
+        (when filename
+          (if (vc-backend filename)
+              (vc-delete-file filename)
+            (progn
+              (delete-file filename)
+              (message "deleted file %s" filename)
+              (kill-buffer))))))
+  )
 
 ;; Rename File and Buffer
 (defun rename-file-and-buffer ()
@@ -25,9 +27,27 @@
           (rename-file filename new-name t)
           (set-visited-file-name new-name t t)))))))
 
+(defun move-file-and-buffer ()
+  "Move the current buffer and file it is visiting."
+  (interactive)
+  (let ((filename (buffer-file-name)))
+    (if (not (and filename (file-exists-p filename)))
+        (message "Buffer is not visiting a file!")
+      (let ((new-name (expand-file-name (file-name-nondirectory (buffer-file-name)) (read-file-name "New Directory: "))))
+        (cond
+         ((vc-backend filename) (vc-rename-file filename new-name))
+         (t
+          (rename-file filename new-name t)
+          (set-visited-file-name new-name t t)))))))
+
 ;; Switch to Previous Buffer
 (defun switch-to-previous-buffer ()
   "Switch to previously open buffer.
 Repeated invocations toggle between the two most recently open buffers."
   (interactive)
   (switch-to-buffer (other-buffer (current-buffer) 1)))
+
+(defun close-all-buffers ()
+  (interactive)
+  (if (y-or-n-p (format "Really close all buffer?"))
+      (mapc 'kill-buffer (buffer-list))))

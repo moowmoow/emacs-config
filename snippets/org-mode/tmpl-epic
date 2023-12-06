@@ -1,0 +1,68 @@
+# key: <epic
+# name: tmpl-epic
+# --
+
+- 제품      :
+- 조직      :
+- 프로젝트  :
+- 요청자    :
+- 상위 TASK :
+- 상태      :
+- 접수일    :
+- 완료기한  :
+- 완료일    :
+- 반영일    :
+
+
+* Objective
+
+Provide context on this project and explain and explain how it fits into your organization's strategic goals.
+
+
+* Success metrics
+
+List project goals and the metrics you'll use to judge its success.
+
+| Goal                               | Metric                                     |
+|------------------------------------+--------------------------------------------|
+| e.g., Simplify the user experience | eg., Customer satisfaction score increases |
+
+
+* Assumptions
+
+List any assumptions you have about your users, technical constraints, or business goals.
+
+
+* Milestones
+
+Type /planner to create a visual roadmap and help your team stay on track. To edit workstreams or dates, select the placeholder and tap the pencil icon.
+
+
+* Requirements
+
+| Requirement | User Story | Importance | Notes |
+|-------------+------------+------------+-------|
+|             |            |            |       |
+
+
+* Uesr interaction and design
+
+| Question | Answer | Date Answered |
+|----------+--------+---------------|
+|          |        |               |
+
+
+* Out of Scope
+
+List the features discussed which are out of scope or might be revisited in a later release.
+
+
+* References
+
+- 서버 :
+- 테이블 :
+- 프로그램 :
+- 컨플루언스 :
+- JIRA :
+
+

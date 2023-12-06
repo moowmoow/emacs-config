@@ -12,9 +12,11 @@
   (package-install 'use-package))
 
 (setq emacs-home (getenv "EMACS_HOME"))
-(setq emacs-base (getenv "EMACS_BASE"))
+;;(setq emacs-home "~/emacs")
+;;(setq emacs-base (getenv "EMACS_BASE"))
 (setq emacs-conf (getenv "EMACS_CONF"))
-(setq emacs-docs (getenv "EMACS_DOCS"))
+;;(setq emacs-conf "~/emacs/init")
+;;(setq emacs-docs (getenv "EMACS_DOCS"))
 (setq emacs-work (concat emacs-home "/work"))
 
 (defun init-config (path)

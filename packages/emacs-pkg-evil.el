@@ -19,5 +19,6 @@
     "C" nil)
   (setq evil-want-C-i-jump nil)
   (global-set-key (kbd "C-M-<return>") 'evil-mode)
+  (evil-set-undo-system 'undo-tree)
   (evil-mode t)
   )

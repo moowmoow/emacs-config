@@ -1,0 +1,23 @@
+# key: <server
+# name: tmpl-server
+# --
+- HOSTNAME :
+- IP       :
+- OS       :
+- CORE     :
+- RAM      :
+- DISK     :
+- TYPE     :
+- PURPOSE  : 
+
+* 계정
+
+| username | password   |
+|----------+-------------|
+|          |  |
+|          |  |
+
+
+* 어플리케이션
+
+

@@ -5,6 +5,8 @@
 (init-package "google-this")
 (init-package "google-translate")
 (init-package "plantuml-mode")
+(init-package "mermaid-mode")
+(init-package "ob-mermaid")
 (init-package "elfeed")
 (init-package "elfeed-web")
 (init-package "elnode")
@@ -28,6 +30,6 @@
   "Browse URL using Chrome."
   (interactive "sURL: ")
   ;;(shell-command (concat "w3m " url))
-  (shell-command (concat "chrome.exe " url))
+  (shell-command (concat "chrome.exe " (concat "\"" (concat url "\""))))
   ;;(pop-to-buffer "*Shell Command Output*")
   (setq truncate-lines t))

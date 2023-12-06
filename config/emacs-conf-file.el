@@ -34,6 +34,7 @@
 (global-set-key (kbd "C-c R") 'rename-file-and-buffer)
 (global-set-key (kbd "C-c D") 'delete-file-and-buffer)
 (global-set-key (kbd "C-c b") 'switch-to-previous-buffer)
+(global-set-key (kbd "C-c M") 'move-file-and-buffer)
 
 ;; 변경된 파일 내용 자동 반영
 (global-auto-revert-mode)

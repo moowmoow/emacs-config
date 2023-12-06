@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: tmpl-backlog
+# key: <backlog
+# --
+
+- 제품 :
+- 프로젝트 :
+- 조직 :
+
+* BACKLOG
+
+
+* IN PROGRESS
+
+
+* DONDED

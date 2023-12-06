@@ -37,6 +37,7 @@
    '(
      (plantuml . t)
      (restclient . t)
+     (mermaid . t)
      ))
 
   (setq org-confirm-babel-evaluate nil)
