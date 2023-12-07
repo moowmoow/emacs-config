@@ -83,8 +83,10 @@
 ;;   (set-frame-parameter (selected-frame) 'alpha (list 80 80))
 ;;   (add-to-list 'default-frame-alist '(alpha ,80)))
 
-(when (display-graphic-p)
-  (require 'all-the-icons))
+;;(when (display-graphic-p)
+;;  (require 'all-the-icons))
 ;; or
 (use-package all-the-icons
-  :if (display-graphic-p))
+  :ensure t
+  )
+;;:if (display-graphic-p))
