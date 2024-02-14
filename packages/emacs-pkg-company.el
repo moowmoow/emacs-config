@@ -7,7 +7,9 @@
 
 (use-package company
   :ensure t
+  :hook (scala-mode . company-mode)
   :config
+  (setq lsp-completion-provider :capf)
   ;;(add-hook 'after-init-hook 'global-company-mode)
   ;;(global-set-key "\t" 'company-complete-common)
   ;; (global-set-key (kbd "C-<tab>") 'company-complete-common)

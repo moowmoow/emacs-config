@@ -7,5 +7,5 @@
 (init-package "hydra")
 (init-package "zoom")
 (init-package "sr-speedbar")
-;; (init-package "sidebar")
-;; (init-package "sublimity")
+;;(init-package "sidebar")
+(init-package "sublimity")

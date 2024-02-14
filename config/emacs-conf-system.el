@@ -6,12 +6,19 @@
 (init-package "helm-system-packages")
 
 (prefer-coding-system 'utf-8)
+;;(setq locale-coding-system 'utf-8)
 (set-terminal-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)
+;;(set-selection-coding-system 'utf-8)
 (set-language-environment "UTF-8")
+;;(setq default-process-coding-system '(utf-8 . utf-8))
 
 (when (eq system-type 'windows-nt)
-  (set-file-name-coding-system 'cp949-dos))
+  (set-file-name-coding-system 'cp949-dos)
+  ;;(set-file-name-coding-system 'w32-unicode-filenames)
+  )
+
+;;(set-file-name-coding-system 'utf-8)
 
 ;;(set-language-environment "Korean")
 (setq default-input-method "korean-hangul390")

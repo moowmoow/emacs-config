@@ -9,9 +9,10 @@
       :url "https://raw.githubusercontent.com/caiorss/org-wiki/master/org-wiki.el"
       :description "Emacs' desktop wiki built with org-mode"
       :features org-wiki
-      ))
+    )
+  )
 
-;; (require 'org-wiki)
+(require 'org-wiki)
 (defalias 'w-h #'org-wiki-helm)
 (defalias 'w-s #'org-wiki-switch)
 (defalias 'w-sr #'org-wiki-switch-root)

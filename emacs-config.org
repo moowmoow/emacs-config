@@ -1,0 +1,79 @@
+
+* 초기 설정
+
+** 변수 설정
+
+#+begin_src emacs-lisp
+  (setq emacs-home (getenv "EMACS_HOME"))
+  ;;(setq emacs-home "~/emacs")
+  (setq emacs-base (getenv "EMACS_BASE"))
+  (setq emacs-conf (getenv "EMACS_CONF"))
+  ;;(setq emacs-conf "~/emacs/init")
+  ;;(setq emacs-docs (getenv "EMACS_DOCS"))
+  (setq emacs-work (concat emacs-home "/work"))
+
+  (mapc 'load (directory-files-recursively (getenv "EMACS_PROP") ".\.el$"))
+#+end_src
+
+** 함수 설정
+
+#+begin_src emacs-lisp
+  (defun init-config (path)
+    (load (concat emacs-conf "/config/emacs-conf-" path ".el")))
+
+  (defun init-package (path)
+    (load (concat emacs-conf "/packages/emacs-pkg-" path ".el")))
+
+  (defun init-function (path)
+    (load (concat emacs-conf "/functions/emacs-func-" path ".el")))
+
+  (defun init-theme (path)
+    (load (concat emacs-conf "/themes/emacs-theme-" path ".el")))
+#+end_src
+
+
+* Global
+
+* System
+
+* Edit
+
+* Help
+
+* Interface
+
+* Navi
+
+* File
+
+* Tool
+
+* Face
+
+* Project
+
+* Term
+
+* Text
+
+* Prog
+
+* Version Controller
+
+#+begin_src emacs-lisp
+  ;; 환경 초기화
+  (init-config "global")
+  (init-config "system")
+  (init-config "edit")
+  (init-config "help")
+  (init-config "interface")
+  (init-config "navi")
+  (init-config "file")
+  (init-config "tool")
+  (init-config "face")
+  (init-config "project")
+  (init-config "term")
+  (init-config "text")
+  (init-config "prog")
+  (init-config "vc")
+#+end_src

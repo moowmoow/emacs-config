@@ -11,17 +11,21 @@
   ;;(org-block-begin-line ((t (:underline "#A7A6AA" :foreground "#008ED1" :background "#EAEAFF"))))
   ;;(org-block-background ((t (:background "#FFFFEA"))))
   ;;(org-block-end-line ((t (:overline "#A7A6AA" :foreground "#008ED1" :background "#EAEAFF"))))
-  ;; (defface org-block-begin-line
-  ;;   '((t (:underline "#A7A6AA" :foreground "#008ED1" :background "#EAEAFF")))
-  ;;   "Face used for the line delimiting the begin of source blocks.")
+  (defface org-block-begin-line
+    '((t (:underline "#444" :foreground "#000000" :background "#444" :bold t :extend t)))
+    "Face used for the line delimiting the begin of source blocks.")
 
-  ;; (defface org-block-background
-  ;;   '((t (:background "#000000")))
-  ;;   "Face used for the source block background.")
+  (defface org-block
+    '((t (:foreground "#eee" :background "#222" :extend t)))
+    "Face used for the source block background.")
 
-  ;; (defface org-block-end-line
-  ;;   '((t (:overline "#A7A6AA" :foreground "#008ED1" :background "#EAEAFF")))
-  ;;   "Face used for the line delimiting the end of source blocks.")
+  (defface org-block-background
+    '((t (:foreground "#000" :background "#000")))
+    "Face used for the source block background.")
+
+  (defface org-block-end-line
+    '((t (:overline "#333" :foreground "#000000" :background "#333" :bold t :extend t)))
+    "Face used for the line delimiting the end of source blocks.")
 
   (setq org-todo-keywords
 	    '((sequencep "TODO(t)" "PROGRESS(p)" "COMPLETE(c)" "|" "DONE(d)")

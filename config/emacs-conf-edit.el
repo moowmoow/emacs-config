@@ -33,7 +33,7 @@
 (init-package "format-all")
 (init-package "wgrep")
 (init-package "darkroom")
-;; (init-package "goto-last-change")
+(init-package "goto-last-change")
 (init-package "goto-chg")
 (init-package "edit-indirect")
 (init-package "evil")

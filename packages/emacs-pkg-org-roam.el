@@ -18,7 +18,6 @@
                 ("C-c n L" . org-toggle-link-display)))))
 :custom
 ;;(setq org-roam-directory "/mnt/d/Dropbox/document/org-roam")
-(setq org-roam-directory "/mnt/d/gdrive/brain")
 :config
 (org-roam-db-autosync-enable)
 (org-roam-db-autosync-mode)

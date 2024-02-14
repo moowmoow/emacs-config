@@ -1,15 +1,4 @@
-
 (init-package "multi-term")
-
-;; 윈도우 환경에서 쉘 설정
-(if (string-equal system-type "windows-nt")
-    (progn
-      ;; (setq explicit-shell-file-name "C:/tools/cygwin64/bin/bash.exe")
-      (setq explicit-shell-file-name (concat emacs-base "/libexec/emacs/26.2/x86_64-w64-mingw32/cmdproxy.exe"))
-      (setq explicit-shell-file-name (concat emacs-base "/libexec/emacs/26.2/x86_64-w64-mingw32/cmdproxy.exe"))
-      (setq shell-file-name explicit-shell-file-name)
-      ;; (add-to-list 'exec-path "C:/tools/cygwin64/bin")
-      ))
 
 (add-hook 'term-mode-hook (lambda ()
                             (yas-minor-mode nil)

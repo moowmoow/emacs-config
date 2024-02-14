@@ -79,9 +79,9 @@
 ;;   :lighter (:eval (if (caps-lock-on (x-led-mask)) " CAPS-LOCK" "")))
 
 ;; 투명창
-;; (when window-system
-;;   (set-frame-parameter (selected-frame) 'alpha (list 80 80))
-;;   (add-to-list 'default-frame-alist '(alpha ,80)))
+(when window-system
+  (set-frame-parameter (selected-frame) 'alpha (list 90 90))
+  (add-to-list 'default-frame-alist '(alpha ,90)))
 
 ;;(when (display-graphic-p)
 ;;  (require 'all-the-icons))
